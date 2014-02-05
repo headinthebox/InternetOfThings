@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="rxjava-core-0.17.0-SNAPSHOT-javadoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../netflix/Development/RxJavaFork/rxjava-core/build/libs/rxjava-core-0.17.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../netflix/Development/RxJavaFork/rxjava-core/build/libs/rxjava-core-0.17.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../netflix/Development/RxJavaFork/rxjava-core/build/libs/rxjava-core-0.17.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
