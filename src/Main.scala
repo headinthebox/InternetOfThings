@@ -8,7 +8,6 @@ import rx.lang.scala._
 
 object Main {
   def main(args: Array[String]) {
-    println("hello")
     val main = new Main ()
     main.launch()
 

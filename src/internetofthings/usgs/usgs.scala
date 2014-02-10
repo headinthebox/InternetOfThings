@@ -25,7 +25,7 @@ object Usgs {
         override val _features: Array[Feature] = diff.values.toArray
         override val metadata: MetaData = b(1).metadata
       }
-    }).flatMap(x => Observable.from(x._features))
+    }).flatMap(x => Observable.from(x._features)).doOnEach(_ => { Thread.sleep(1000) })
   }
 
   def apply(): Observable[FeatureCollection] = {

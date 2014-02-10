@@ -14,7 +14,11 @@ class Map extends Region with Observer[MarkerInfo] {
   private val subject: AsyncSubject[Observer[MarkerInfo]] = AsyncSubject()
   private[internetofthings] var webView: WebView = new WebView
   private[internetofthings] var webEngine: WebEngine = webView.getEngine
-  val map: String = "file:///Users/Oracle/IdeaProjects/JavaFxPlayGround/src/sample/Map.html"
+  val map: String = s"file://${System.getProperty("user.dir")}/src/Map.html"
+
+  // must: file:///Users/Oracle/IdeaProjects/InternetOfThings/src/Map.html
+  // is:   file:///Users/Oracle/IdeaProjects/InternetOfThings/sample/Map.html
+  println(map)
 
   webEngine.load(map)
   this.getChildren.add(webView)
