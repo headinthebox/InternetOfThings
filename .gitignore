@@ -2,9 +2,12 @@
 *.log
 
 # sbt specific
+<<<<<<< HEAD
 .cache/
 .history/
 .lib/
+=======
+>>>>>>> 758a2fee2dc6a6de1081864928d8803c22b63aa9
 dist/*
 target/
 lib_managed/
@@ -14,7 +17,10 @@ project/plugins/project/
 
 # Scala-IDE specific
 .scala_dependencies
+<<<<<<< HEAD
 .worksheet
 
 .idea/
 .iml
+=======
+>>>>>>> 758a2fee2dc6a6de1081864928d8803c22b63aa9
