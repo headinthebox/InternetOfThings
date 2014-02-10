@@ -5,12 +5,10 @@ import javafx.scene.Scene
 import javafx.stage.Stage
 import rx.lang.scala._
 
-
 object Main {
   def main(args: Array[String]) {
     val main = new Main ()
     main.launch()
-
   }
 }
 
@@ -27,12 +25,13 @@ class Main extends Application {
   def launch() = { Application.launch() }
 
   def start(stage: Stage) {
+
     val map: Map = new Map()
+
     map.onLoaded.subscribe(o => new Thread {
-      override def run(): Unit = {
-        source.subscribe(o)
-      }
+      override def run(): Unit =  source.subscribe(o)
     }.start())
+
     val scene: Scene = new Scene(map)
     stage.setScene(scene)
     stage.setWidth(800)
